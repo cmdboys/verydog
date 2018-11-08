@@ -1,33 +1,13 @@
 
-Application created by [ThinkJS](http://www.thinkjs.org)
+# verydog
+每天定时自动更新github优质项目，掘金好文，技术大佬微博的汇总平台
 
-## Install dependencies
+https://millent.gitee.io/verydog/
 
-```
-npm install
-```
+## Install
 
-## Start server
+* 项目已经包含爬虫爬取的github start > 1000的用户的Sql文件
+* `npm i`
+* `pm2 start pm2.json`
 
-```
-npm start
-```
-
-## Deploy with pm2
-
-Use pm2 to deploy app on production enviroment.
-
-```
-pm2 startOrReload pm2.json
-```
-
-## 未来实现
-### 1.定时抓取大佬的微博信息，存数据库
-#### 实现
-接口
-```html
-https://m.weibo.cn/api/container/getIndex?containerid=2304131761511274_-_WEIBO_SECOND_PROFILE_WEIBO&page_type=03&page=1
-```
-* containerid = 大佬的用户id
-* page = 分页
-* 默认抓取一页即可
+前端源码见 https://github.com/cmdboys/verydog-web
